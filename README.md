@@ -23,6 +23,20 @@ The program was built in accordance with the principles **SOLID** and **layered 
 
 ### To run the program:
 - clone the project;
-- configure the database connection file - ConnectionUtil;
-- configure Tomcat.
+- configure the database connection file - *src/main/java/taxi/util/ConnectionUtil*:<br/>
+  {<br/>
+  - String URL = "jdbc:mysql://localhost:3306/**your database name**?serverTimezone=GMT";<br/>
+  - String USERNAME = "**your database username**";<br/>
+  - String PASSWORD = "**your database password**";<br/>
+  - String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver"; <br/>
+    }<br/>
+- configure Tomcat:
+  {<br/>
+  **IntellijIdea:**
+  - Run –>> Edit Configurations…
+  - Clicks **+** icon, select Tomcat Server –>> Local<br/>
+  - Clicks on the **fix** icon and choose the exploded war version
+  - On the **deployment** tab in **application context** field remove data and put **"/"**; 
+  - Press **OK**.
+  }<br/>
 
