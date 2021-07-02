@@ -30,13 +30,13 @@ The program was built in accordance with the principles **SOLID** and **layered 
   - String PASSWORD = "**your database password**";<br/>
   - String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver"; <br/>
     }<br/>
-- configure Tomcat:
+- configure Tomcat:<br/>
   {<br/>
   **IntellijIdea:**
   - Run –>> Edit Configurations…
   - Clicks **+** icon, select Tomcat Server –>> Local<br/>
   - Clicks on the **fix** icon and choose the exploded war version
   - On the **deployment** tab in **application context** field remove data and put **"/"**; 
-  - Press **OK**.
+  - Press **OK**.<br/>
   }<br/>
 
